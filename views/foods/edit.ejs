@@ -1,0 +1,8 @@
+<h1>Edit Food</h1>
+<form action="/foods/<%= item._id %>" method="POST">
+  <input type="hidden" name="_method" value="PUT">
+  <label for="name">Food Name:</label>
+  <input type="text" name="name" id="name" value="<%= item.name %>" required>
+  <button type="submit">Update Food</button>
+</form>
+<a href="/foods">Back to Pantry</a>
